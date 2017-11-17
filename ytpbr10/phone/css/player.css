@@ -1,0 +1,89 @@
+.version.player /* version checker */
+{
+	color: #000006;
+	background-color: #76BD9B;
+}
+
+#muse_css_mq
+{
+	background-color: #FFFFFF;
+}
+
+#page
+{
+	z-index: 1;
+	min-height: 570px;
+	background-image: none;
+	border-width: 0px;
+	border-color: #000000;
+	background-color: transparent;
+	padding-bottom: 19px;
+	width: 100%;
+	max-width: 380px;
+}
+
+#u702-4
+{
+	z-index: 10;
+	display: block;
+	vertical-align: top;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 319px;
+	width: 87.11%;
+	left: 6.32%;
+}
+
+#u675
+{
+	z-index: 8;
+	background-color: transparent;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 35px;
+	width: 80.79%;
+	margin-left: 9.61%;
+	left: -1px;
+}
+
+#u705-4
+{
+	z-index: 2;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 37px;
+	width: 60.53%;
+	left: 3.43%;
+}
+
+#u708
+{
+	z-index: 6;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 6px;
+	width: 25.27%;
+	left: 71.58%;
+}
+
+.html
+{
+	background: #FFFFFF url("../../images/8zlzgr.gif") no-repeat left top scroll;
+}
+
+body
+{
+	position: relative;
+	min-width: 320px;
+}
+
+.verticalspacer
+{
+	min-height: 28px;
+}
+
+#u675_img,#u708_img
+{
+	width: 100%;
+}
+
