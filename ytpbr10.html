@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=500, initial-scale=1">
+  <title>#YTPBR10</title>
+ 
+ <style>
+ @font-face {
+  font-family: 'VCROSDMono';
+  src: url('VCR_OSD_MONO_1.001.ttf');
+}
+body {
+ background-image: url("images/fundo.gif");
+}
+
+div{
+  color: white;
+  font-family: 'VCROSDMono';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: 80px;
+}
+
+/*que paleta de cores mais bugada*/
+.gift {
+color: "#616365";
+color: "#697465";
+color: "#206f20";
+color: "#707265";
+color: "#73656e";
+color: "#746520";
+}
+
+</style>
+</head>
+
+<body>
+  <div id="ytp" title="aHogc3J2a3IgcXIgc8OzZ2JhZiBmYm9lciBww6l5aHluZiByZmNycHZueXZtbnFuZiBxbiBlcmd2YW4uIEJhcXIgcmZnw6NiPw==">
+  <video id="vid" style="max-width: 100%;" src="https://puu.sh/yqkTP/2079ec47b6.mp4" controls>
+</video>
+  <br/>
+<span id="counter">222222</span>
+<audio id="bg_audio" src="https://puu.sh/yq3sT/7998b5388d.mp3" autoplay loop></audio>
+</div>
+
+  
+    <script type="text/javascript">
+function count(){var e=Date.now(),t=data-e,o=Math.floor(t/1e3);segundosRestantes=o;var n=Math.floor(o/60),a=Math.floor(n/60),d=Math.floor(a/24);a%=24,n%=60,o%=60,a=10>a?"0"+a:a,n=10>n?"0"+n:n,o=10>o?"0"+o:o;var u=""+d+a+n+o,s=parseInt(u);document.getElementById("counter").innerHTML=s,10>=segundosRestantes&&(document.getElementById("vid").style="display: none;",document.body.style.background="black",audio.pause()),0>=segundosRestantes&&(window.location="redirect.php")}var video=document.getElementById("vid"),audio=document.getElementById("bg_audio");video.onplay=function(){audio.pause()},video.onpause=function(){audio.play()};var data=new Date("Thu, Nov 23 2017 18:00:00 GMT-0200"),segundosRestantes;setInterval(count,1e3);
+</script>
+
+</body>
+</html>
