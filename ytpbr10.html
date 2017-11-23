@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=500, initial-scale=1">
   <link rel="icon" href="https://lucaspontoexe.github.io/images/ok-favicon.ico" type="image/x-icon"/>
-  
+  <!--v4.2, GitHub-->
   <title>#YTPBR10</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109667081-1"></script>
@@ -19,10 +19,10 @@
  <style>
  @font-face {
   font-family: 'VCROSDMono';
-  src: url('https://lucaspontoexe.github.io/VCR_OSD_MONO_1.001.ttf');
+  src: url('VCR_OSD_MONO_1.001.ttf');
 }
 body {
- background-image: url("https://lucaspontoexe.github.io/images/fundo.gif");
+ background-image: url("images/fundo.gif");
 }
 
 div{
@@ -36,32 +36,46 @@ div{
   font-size: 80px;
 }
 
+#bottom {
+  color: #888;
+  font-family: sans-serif;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%);
+  text-align: center;
+  font-size: 14px;
+}
+
 /*que paleta de cores mais bugada*/
-.gift {
-color: "#616365";
-color: "#697465";
-color: "#206f20";
-color: "#707265";
-color: "#73656e";
-color: "#746520";
+.vibration {
+color: "#6f2073"; 
+color: "#6f6d20"; 
+color: "#717565"; 
+color: "#722074"; 
+color: "#65206d"; 
+color: "#6f7374"; 
+color: "#726172";
 }
 
 </style>
 </head>
 
 <body>
-  <div id="ytp" title="aHogc3J2a3IgcXIgc8OzZ2JhZiBmYm9lciBww6l5aHluZiByZmNycHZueXZtbnFuZiBxbiBlcmd2YW4uIEJhcXIgcmZnw6NiPw==">
+  <div id="ytp" title="dW0gZmVpeGUgZGUgZsOzdG9ucyBzb2JyZSBjw6lsdWxhcyBlc3BlY2lhbGl6YWRhcyBkYSByZXRpbmEuIE9uZGUgZXN0w6NvPw==">
   <video id="vid" style="max-width: 100%;" src="https://puu.sh/yqkTP/2079ec47b6.mp4" controls>
 </video>
   <br/>
 <span id="counter">222222</span>
 <audio id="bg_audio" src="https://puu.sh/yq3sT/7998b5388d.mp3" autoplay loop></audio>
+<audio id="td2" src="https://puu.sh/yqACe/26a54d3eba.mp3"></audio>
 </div>
-
+<a href="javascript:audioToggle()" id="bottom">
+  Ligar/Desligar som de fundo
+</a>
   
     <script type="text/javascript">
-function count(){var e=Date.now(),t=data-e,o=Math.floor(t/1e3);segundosRestantes=o;var n=Math.floor(o/60),a=Math.floor(n/60),d=Math.floor(a/24);a%=24,n%=60,o%=60,a=10>a?"0"+a:a,n=10>n?"0"+n:n,o=10>o?"0"+o:o;var u=""+d+a+n+o,s=parseInt(u);document.getElementById("counter").innerHTML=s,10>=segundosRestantes&&(document.getElementById("vid").style="display: none;",document.body.style.background="black",audio.pause()),0>=segundosRestantes&&(window.location="http://cadeosite.16mb.com/ytpbr10_redirect.php")}var video=document.getElementById("vid"),audio=document.getElementById("bg_audio");video.onplay=function(){audio.pause()},video.onpause=function(){audio.play()};var data=new Date("Thu, Nov 23 2017 18:00:00 GMT-0200"),segundosRestantes;setInterval(count,1e3);
-</script>
-
+	function audioToggle(){var e=document.getElementById("bg_audio");e.muted=!e.muted}function loadServerTime(){var e=new XMLHttpRequest;e.onreadystatechange=function(){if(e.readyState==XMLHttpRequest.DONE)if(200==e.status){var t=JSON.parse(e.responseText);agora=t.time}else agora=Date.now();else agora=Date.now()},e.open("GET","http://cadeosite.16mb.com/ytpbr10/time.php?random="+Math.random(),!0),e.send()}function count(){agora+=1e3;var e=data-agora,t=Math.floor(e/1e3);segundosRestantes=t;var o=Math.floor(t/60),a=Math.floor(o/60),n=Math.floor(a/24);a%=24,o%=60,t%=60,a=10>a?"0"+a:a,o=10>o?"0"+o:o,t=10>t?"0"+t:t;var d=""+n+a+o+t,s=parseInt(d);document.getElementById("counter").innerHTML=s,(222222==s||22222==s||2222==s||222==s)&&dois.play(),10>=segundosRestantes&&(document.getElementById("vid").style="display: none;",document.getElementById("bottom").style="display: none;",document.body.style.background="black",audio.pause()),0>=segundosRestantes&&(window.location="https://lucaspontoexe.github.io/ytpbr10_redirect.html")}var video=document.getElementById("vid"),audio=document.getElementById("bg_audio"),dois=document.getElementById("td2");video.onplay=function(){audio.pause()},video.onpause=function(){audio.play()};var agora;loadServerTime();var data=new Date("Thu, Nov 23 2017 18:00:00 GMT-0200"),segundosRestantes;setInterval(count,1e3);
+	</script>
 </body>
 </html>
