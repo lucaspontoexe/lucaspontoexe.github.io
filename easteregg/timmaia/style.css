@@ -1,5 +1,7 @@
 article {
   text-align: center;
+  margin: 20px;
+  box-sizing: border-box;
 }
 
 .comic {
